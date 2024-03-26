@@ -1,0 +1,181 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  /* max-width: 600px; */
+  margin: 0 auto;
+  width: 700px;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px white(0, 0, 0, 0.2);
+  text-align: center;
+  border-color: aliceblue;
+}
+
+#error{
+  background-color: #dc143c;
+  border-radius: 5px;
+  padding : 10px;
+  display: none;
+}
+
+h1 {
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+}
+input:focus{
+  outline: none
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result p span{
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+#yourAgeContainer, #ageInContainer,#milestonesContainer, #nextBirthday, #owner-section{
+  background-color: #242424;
+  border-radius: 5px;
+  padding : 10px;
+  margin : 10px 0px;
+}
+
+.ageInHours{
+  float:right
+}
+
+
+
+
+#milestones h2 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#milestones p {
+  font-size: 16px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+#milestones span {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-owner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.owner-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.owner-info {
+  padding: 30px;
+  height:300px;
+  text-align: left;
+}
+.info{
+  float: left;
+}
+.social-feed {
+  margin-top: 10px;
+  width: 400px;
+  float: right;
+}
+
+.social-feed a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.about-us {
+  margin-top: 20px;
+  text-align: center;
+}
+.owner-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#nextBirthdayDays,
+  #nextBirthdayHours,
+  #nextBirthdayMinutes,
+  #nextBirthdaySeconds {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #fff;
+    margin: 5px;
+  }
+  .nextBirthdayResults{
+    display: none;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .container {
+    flex: 1;
+  }
+  footer {
+    margin-top: auto;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  h2{
+    font-size: 25px;
+  }

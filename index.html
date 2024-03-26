@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="ShadBalti Dilshad Hussain Shad Balti (shadbalti2@gmail.com)">
+  <meta name="description" content="Introducing Age Calculator App, a user-friendly app that helps you calculate your age accurately in seconds. Enter your birthdate and instantly see your age in years, months, days, hours, minutes, and even seconds!">
+  <meta name="keywords" content="Age Calculator, Age Calculator App, Age Tracker, Birthday Calculator, Date of Birth Calculator, Open Source App, Free App">
+  <title>Age Calculator App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Age Calculator</h1>
+    </header>
+    <form>
+      <label for="birthdate">Enter your birthdate:</label>
+      <input type="date" id="birthdate" required>
+      <button type="button" id="calculateBtn" onclick="calculateAge()">Calculate Age</button>
+    </form>
+    <p id="error"></p>
+    <main id="resultSection" style="display: none;">
+      <section id="result">
+        <div id="yourAgeContainer" style="float: left;width: 320px;height:200px">
+          <h2>Your Age</h2>
+          <h4>Time from your birth</h4>
+          <p><span id="years"></span> years, <span id="months"></span> months, <span id="weeks"></span> weeks,<span id="days"></span> days
+        </div>
+
+        <div id="nextBirthday" class="nextBirthdayResults" style="display: none; float: right;width: 320px;height:200px">
+          <h2>Next Birthday</h2>
+          <h4>Time until next birthday</h4>
+          <p><span id="nextBirthdayDays"></span> Days <span id="nextBirthdayHours"></span> Hours <span id="nextBirthdayMinutes"></span> Minutes <span id="nextBirthdaySeconds"></span> Seconds</p>
+        </div>
+        
+      </section>
+       <div style="clear: both;"></div>
+     <section id="milestones" >
+        <div id="milestonesContainer" style="float: left;width: 320px;height:250px">
+          <h2 style="font-size: 25px;">Life Milestones</h2>
+          <p>Retirement Age: <span id="retirementAge"></span></p>
+          <p>Half-Life: <span id="halfLife"></span></p>
+          <p>Age 18: <span id="age18"></span></p>
+          <p>Age 21: <span id="age21"></span></p>
+          <p>Age 30: <span id="age30"></span></p>
+        </div>
+        <div id="ageInContainer" style=" float: right;width: 320px;height:250px">
+          <h2 style="font-size: 25px;">Age In</h2>
+          <p>Hours: <span id="hours"></span></p>
+          <p>Minutes: <span id="minutes"></span></p>
+          <p>Seconds: <span id="seconds"></span></p>
+          <p>Milliseconds: <span id="milliseconds"></span></p>
+          </div>
+      </section> 
+      <div style="clear: both;"></div>
+      
+    </main>
+  
+  </div>
+
+  <script src="main.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
